@@ -1,0 +1,20 @@
+---
+layout: home
+title: Programming, Products and Prosperity
+description: "I'd like us to converse about programming, products and prosperity."
+---
+<div class='col-sm-8 center-block no-float'>
+
+  <div class='top-margined centered'>
+    <img src="/images/{{ site.owner.avatar }}" class="profile centered">
+  </div>
+
+  <div class='top-margined centered'>
+    <span class='hello'>Hello :)</span>
+  </div>
+  <div class='top-margined'>
+    {% for post in site.posts %}
+        <div><a href="{{post.url}}" class='post'>{{ post.title }}</a></div>
+    {% endfor %}
+  </div>
+</div>

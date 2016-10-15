@@ -1,0 +1,29 @@
+<html>
+  <head>
+    {% include head.html %}
+    {% include post_meta_data.html %}
+  </head>
+  <body id="post">
+
+    {% include email_signup.html %}	        
+    <div class='container index'>
+      <div class='row'>
+        <div class='col-sm-3'>
+          {% include profile_card.html page= page %}	        
+        </div>
+        <div class='col-sm-9'>
+          <div class='extra-top-margined'>
+            <header class='post-title'>
+              <span>{{ page.title }}</span>
+            </header>
+            <article class='post top-bar'>
+              {{ content }}
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}	        
+    {% include scripts.html %}	        
+  </body>
+</html>

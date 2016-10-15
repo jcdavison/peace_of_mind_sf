@@ -1,0 +1,10 @@
+ruby '2.2.4'
+source 'https://rubygems.org'
+
+gem 'rack-jekyll', '~> 0.4'
+gem 'jekyll', '~> 3.1'
+gem 'redcarpet', '~> 3.3'
+gem 'pygments.rb', '~> 0.6.3'
+gem 'rouge', '~> 1.10', '>= 1.10.1'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-sass', '~> 4.5'

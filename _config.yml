@@ -1,0 +1,40 @@
+url:                https://peace_of_mind.herokuapp.com
+# url:                http://localhost:4000
+title:            PeaceOfMind
+name:            PeaceOfMind
+description:      "Martial Arts, Athletics and Happiness."
+logo:             nunchuka.jpg
+
+owner:
+  name:           Tim Richards
+  avatar:         nunchuka.jpg
+  email:          sifutimr@gmail.com
+  conversion:     https://peace_of_mind.herokuapp.com
+  # twitter:        startuplandia
+  # facebook:      jcdavison 
+  # github:        jcdavison
+  # linkedin:      jcdavison 
+  # instagram:     startuplandia
+  # cellphone:     415-779-5205
+
+# google_analytics:    UA-25072232-1
+# google_verify:      3uBCl28qsFl1eFkRK2XZWOkaxUIf5O2-i-MWmpbzBXE
+
+timezone:    America/Los_Angeles
+future:      true
+highlighter:  pygments
+markdown:    redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+permalink:   /:categories/:title/
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+
+sass:
+  sass_dir: _scss
+
+include: [".htaccess"]
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems, config, log, Rakefile, Rakefile.rb, tmp, less, test, spec, package.json, node_modules]
+
+gems:
+  ['bootstrap-sass']

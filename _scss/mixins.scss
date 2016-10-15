@@ -1,0 +1,55 @@
+@mixin box-shadow {
+  box-shadow: 1px 1px 3px $very-light-grey;
+}
+
+@mixin borders {
+  border: 1px solid $very-light-grey;
+}
+
+@mixin padding {
+  padding: 1.5em;
+}
+
+@mixin thick-padding {
+  padding: 2.8em;
+}
+
+@mixin centered {
+  text-align: center;
+}
+
+@mixin pointer {
+  cursor: pointer;
+}
+
+@mixin top-margined {
+  margin-top: 1em;
+}
+
+@mixin bottom-margined {
+  margin-bottom: 1em;
+}
+
+@mixin extra-top-margined {
+  margin-top: 3em;
+}
+
+@mixin acqua {
+  color: $acqua;
+}
+
+@mixin green {
+  color: $green;
+}
+
+@mixin profile-borders {
+  border-right: 3px solid $very-light-grey;
+  border-bottom: 3px solid $very-light-grey;
+}
+
+// overrides
+
+blockquote {
+  font-size: .9em !important;
+  border-left: 0 !important;
+}
