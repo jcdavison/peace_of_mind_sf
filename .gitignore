@@ -14,7 +14,6 @@ _site
 .sass-cache
 /test/source/file_name.txt
 /vendor
-Gemfile.lock
 bin/
 coverage
 gh-pages/
