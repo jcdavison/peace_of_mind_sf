@@ -34,7 +34,7 @@ sass:
   sass_dir: _scss
 
 include: [".htaccess"]
-exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems, config, log, Rakefile, Rakefile.rb, tmp, less, test, spec, package.json, node_modules]
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems, config, log, Rakefile, Rakefile.rb, tmp, less, spec, package.json, node_modules]
 
 gems:
   ['bootstrap-sass']
