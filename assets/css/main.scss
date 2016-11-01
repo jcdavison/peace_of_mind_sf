@@ -53,7 +53,7 @@ $body-bg: $black;
 }
 
 .caption {
-  color: $acqua;
+  color: $orange;
   font-size: 1.2em;
 }
 
@@ -129,6 +129,10 @@ a {
 
 .top-margined {
   @include top-margined;
+}
+
+.vert-margined {
+  @include vert-margined;
 }
 
 .bottom-margined {
