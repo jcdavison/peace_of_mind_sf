@@ -94,6 +94,10 @@ div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
   font-family: "Muli-Regular"
 } 
 
+h2 {
+  font-size: 2.3em;
+}
+
 .hello {
   color: $orange;
   font-size: 4.0em;
@@ -235,6 +239,7 @@ article.post {
 a.post {
   @include green;
   font-size: 1.6em;
+  font-family: "Papyrus";
 }
 
 figure.highlight {
