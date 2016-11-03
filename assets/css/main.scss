@@ -152,9 +152,18 @@ img.profile {
   border: 5px solid $orange;
   height: 20em;
   &.small {
-    height: 150px;
+    height: 200px;
     border: 5px solid $orange;
   }
+}
+
+img.card {
+  max-width: 30em;
+}
+
+img.yin {
+  width: 4em;
+  height: 4em;
 }
 
 .profile-card {
@@ -225,7 +234,7 @@ article.post {
 
 a.post {
   @include green;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 figure.highlight {

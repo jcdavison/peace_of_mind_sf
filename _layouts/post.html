@@ -6,16 +6,15 @@
   </head>
   <body id="post">
 
-    {% include email_signup.html %}	        
     <div class='container index'>
       <div class='row'>
         <div class='col-sm-3'>
           {% include profile_card.html page= page %}	        
         </div>
-        <div class='col-sm-9'>
+        <div class='col-sm-8'>
           <div class='extra-top-margined'>
             <header class='post-title'>
-              <span>{{ page.title }}</span>
+              <span class='papy orange'>{{ page.title }}</span>
             </header>
             <article class='post top-bar'>
               {{ content }}
