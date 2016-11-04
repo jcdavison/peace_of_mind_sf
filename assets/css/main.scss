@@ -62,7 +62,7 @@ img.brand {
 }
 
 img.constrained {
-  max-width: 750px;
+  max-width: 600px;
 }
 
 i.icon {
@@ -156,7 +156,7 @@ img.profile {
   border: 5px solid $orange;
   height: 20em;
   &.small {
-    height: 200px;
+    height: 16em;
     border: 5px solid $orange;
   }
 }
@@ -190,10 +190,6 @@ img.yin {
 article.post {
   p, ul, ol {
     font-size: $display-font-size;
-  }
-
-  h3 {
-    color: $red;
   }
 
   div.separator {
@@ -239,7 +235,6 @@ article.post {
 a.post {
   @include green;
   font-size: 1.6em;
-  font-family: "Papyrus";
 }
 
 figure.highlight {
