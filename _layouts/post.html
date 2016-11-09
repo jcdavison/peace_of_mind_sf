@@ -5,21 +5,7 @@
     {% include post_meta_data.html %}
   </head>
   <body id="post">
-
-    <div class='container index'>
-      <div class='row'>
-        <div class='col-sm-3'>
-          {% include profile_card.html page= page %}	        
-        </div>
-        <div class='col-sm-8'>
-          <div class='extra-top-margined'>
-            <article class='post top-bar'>
-              {{ content }}
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{ content }}
     {% include scripts.html %}	        
   </body>
 </html>
