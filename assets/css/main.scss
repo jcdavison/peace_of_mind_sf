@@ -27,7 +27,9 @@ $body-bg: $black;
 @import "bootstrap";
 @import "mixins";
 
-
+.smallz {
+  font-size: .8em;
+}
 
 @font-face{
   font-family: "Muli-Regular";
@@ -63,6 +65,7 @@ img.brand {
 
 img.constrained {
   max-width: 600px;
+  max-height: 450px;
 }
 
 i.icon {
