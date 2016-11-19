@@ -240,6 +240,21 @@ a.post {
   font-size: 1.6em;
 }
 
+a {
+  &:hover {
+    color: $acqua;
+    text-decoration: none;
+  }
+
+}
+
+a.target {
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
 figure.highlight {
   pre {
     @include top-margined;
@@ -295,4 +310,8 @@ iframe.full-col {
 
 .full-bleed {
   width: 90%;
+}
+
+.section {
+  margin: 3em 0;
 }
