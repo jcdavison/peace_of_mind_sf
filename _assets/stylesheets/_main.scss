@@ -117,7 +117,7 @@ img.profile {
   border: 5px solid $orange;
   height: 20em;
   &.small {
-    height: 16em;
+    height: 13em;
     border: 5px solid $orange;
   }
 }
@@ -174,11 +174,6 @@ article.post {
   border-right: 3px solid $light-orange;
 }
 
-.top-bar {
-  border-top: 3px solid $very-light-grey;
-  padding-top: 1em;
-}
-
 .pointer {
   @include pointer;
 }
@@ -196,7 +191,7 @@ article.post {
 
 a.post {
   @include green;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 a {
