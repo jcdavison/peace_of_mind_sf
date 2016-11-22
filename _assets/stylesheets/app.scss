@@ -21,6 +21,10 @@ $navbar-inverse-bg: $green;
 $body-bg: $black;
 // , @font-size-base, and @line-height-base
 
+body {
+  padding-top: 2.5em;
+}
+
 @import "normalize";
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -52,3 +56,29 @@ div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
 
 @import "mixins";
 @import 'main';
+
+.nav.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+
+#navbar-content {
+  text-align: center;
+  padding: none;
+  background-color: $black;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background-color: $black;
+  border-radius: 0px;
+  // border: 1px solid white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $green;
+  font-size: 1.1em;
+}
