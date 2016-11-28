@@ -26,6 +26,10 @@ body {
   padding-top: 2.5em;
 }
 
+.transparent {
+  color: transparent;
+}
+
 @import "normalize";
 @import "bootstrap-sprockets";
 @import "bootstrap";
