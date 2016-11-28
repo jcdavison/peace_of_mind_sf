@@ -1,3 +1,6 @@
+.wide-padding {
+  padding: 0 2.5em;
+}
 
 .smallz {
   font-size: .8em;
@@ -133,11 +136,32 @@ img.yin {
 }
 
 .profile-card {
+  width: 13em;
+  position: fixed;
+  margin-left: 3em;
   @include profile-borders;
-  @include extra-top-margined;
+  // @include extra-top-margined;
+  // left: 50%;
+  // margin-left: -5em;
+  margin-top: 2em;
+  // margin: 2em auto;
   @include centered;
   span {
     font-size: 1.2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-card {
+    width: 10em;
+    margin-left: 2em;
+  }
+
+  img.profile {
+    &.small {
+      height: 8em;
+      border: 5px solid $orange;
+    }
   }
 }
 

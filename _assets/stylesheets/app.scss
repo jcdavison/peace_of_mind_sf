@@ -63,6 +63,10 @@ div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
   display: inline-block;
 }
 
+.nav-offset {
+  margin-left: 18%;
+}
+
 #navbar-content {
   text-align: center;
   padding: none;
@@ -82,3 +86,10 @@ div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
   color: $green;
   font-size: 1.1em;
 }
+
+
+// @media (min-width: 1200px) {
+//   .container {
+//       width: 1000px;
+//     }
+// }

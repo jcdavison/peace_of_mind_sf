@@ -2,5 +2,4 @@
 //= require bootstrap-sprockets
 
 $(window).on('load', function() {
-
 })
