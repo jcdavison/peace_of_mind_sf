@@ -1,3 +1,27 @@
+// set core fonts
+
+@font-face{
+  font-family: "Muli";
+  src: font_url('Muli.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
+  font-family: "Muli";
+} 
+
+@font-face{
+  font-family: "Papyrus";
+  src: font_url('Papyrus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.papy {
+  font-family: "Papyrus";
+}
+
 .wide-padding {
   padding: 0 2.5em;
 }
@@ -5,10 +29,6 @@
 .smallz {
   font-size: .8em;
 }
-
-
-// font-family: "Muli-Regular";
-
 
 .footer {
   margin: 3em 0;
@@ -20,14 +40,6 @@
   font-size: 1.2em;
 }
 
-img.brand {
-  height: 500px
-}
-
-img.constrained {
-  max-width: 600px;
-  max-height: 450px;
-}
 
 i.icon {
   content: "\f09b";
@@ -53,10 +65,6 @@ i.icon {
   color: $green;
   font-size: 1.4em;
 }
-
-// div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
-//   font-family: "Muli-Regular";
-// } 
 
 h2 {
   font-size: 2.3em;
@@ -140,18 +148,29 @@ img.yin {
   position: fixed;
   margin-left: 3em;
   @include profile-borders;
-  // @include extra-top-margined;
-  // left: 50%;
-  // margin-left: -5em;
   margin-top: 2em;
-  // margin: 2em auto;
   @include centered;
   span {
     font-size: 1.2em;
   }
 }
 
+img.constrained {
+  max-width: 600px;
+  max-height: 450px;
+}
+
+.video-container {
+
+}
+
 @media (max-width: 992px) {
+
+  img.constrained, img.card, iframe {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
   .profile-card {
     width: 10em;
     margin-left: 2em;
@@ -185,13 +204,6 @@ article.post {
     font-size: 1.4em;
   }
 }
-
-// CSS LEGOS
-// .container {
-//   min-height: 1000px;
-//   background-color: $base-background-color;
-//   padding: 0 2em;
-// }
 
 .index {
   border-left: 3px solid $light-orange;
@@ -292,4 +304,33 @@ iframe.full-col {
 
 .section {
   margin: 3em 0;
+}
+
+.nav.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+
+.nav-offset {
+  margin-left: 18%;
+}
+
+#navbar-content {
+  text-align: center;
+  padding: none;
+  background-color: $black;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background-color: $black;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $green;
+  font-size: 1.1em;
 }
