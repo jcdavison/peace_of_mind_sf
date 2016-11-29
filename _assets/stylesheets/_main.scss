@@ -333,6 +333,10 @@ iframe.full-col {
 .navbar-default .navbar-nav > li > a {
   color: $green;
   font-size: 1.1em;
+  &:hover {
+    color: $acqua;
+    text-decoration: none;
+  }
 }
 
 #primary-slider, #certs-slider {
