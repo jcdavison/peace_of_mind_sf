@@ -2,4 +2,6 @@
 //= require bootstrap-sprockets
 
 $(window).on('load', function() {
+  $($('.item')[0]).addClass('active')
+  $('#primary-slider').removeClass('hide')
 })
