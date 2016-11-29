@@ -1,7 +1,8 @@
-<div class='top-margined centered green'>
-  <a href='/' class='post'>Home</a> | 
-  <a href='/jeetkunedo' class='post'>Martial Arts</a> | 
-  <a href='/fitness' class='post'>Fitness</a> | 
-  <a href='/pricing' class='post'>Pricing</a>  |
-  <a href='/about' class='post'>About</a> 
-</div>
+
+<li><a href='/jeetkunedo' class='nav'>Martial Arts</a></li>
+<li><a href='/fitness' class='nav'>Fitness</a></li>
+<li><a href='/pricing' class='nav'>Pricing</a></li>
+<li><a href='/about' class='nav'>About</a></li> 
+{% if page.url != '/' %}
+  <li><a href='/' class='nav'>Home</a></li>
+{% endif %}

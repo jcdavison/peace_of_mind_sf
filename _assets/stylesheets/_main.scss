@@ -1,0 +1,340 @@
+// set core fonts
+
+@font-face{
+  font-family: "Muli";
+  src: font_url('Muli.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div, p, span, li, ul, h1, h2, h3, h4, h5, pre, code, label {
+  font-family: "Muli";
+} 
+
+@font-face{
+  font-family: "Papyrus";
+  src: font_url('Papyrus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.papy {
+  font-family: "Papyrus";
+}
+
+.wide-padding {
+  padding: 0 2.5em;
+}
+
+.smallz {
+  font-size: .8em;
+}
+
+.footer {
+  margin: 3em 0;
+  @include centered;
+}
+
+.caption {
+  color: $orange;
+  font-size: 1.2em;
+}
+
+
+i.icon {
+  content: "\f09b";
+  font-family: FontAwesome;
+}
+
+.no-float {
+  float: none !important;
+}
+
+.grey {
+  color: $grey;
+}
+
+.green {
+  color: $green;
+}
+
+.topic {
+  @include top-margined;
+  @include bottom-margined;
+  font-style: italic;
+  color: $green;
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+.hello {
+  color: $orange;
+  font-size: 4.0em;
+}
+
+.orange {
+  color: $orange;
+}
+
+a {
+  @include acqua;
+  &.red {
+    color: $red;
+  }
+}
+
+.red {
+  color: $red;
+}
+
+.itali {
+  font-style: italic;
+}
+
+.borders {
+  border: 1px solid $grey;
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top-margined {
+  @include top-margined;
+}
+
+.vert-margined {
+  @include vert-margined;
+}
+
+.bottom-margined {
+  @include bottom-margined;
+}
+
+.extra-top-margined {
+  @include extra-top-margined;
+}
+
+.major-extra-top-margined {
+  margin-top: 6.5em;
+}
+
+img.profile {
+  border-radius: 1000px;
+  border: 5px solid $orange;
+  height: 20em;
+  &.small {
+    height: 13em;
+    border: 5px solid $orange;
+  }
+}
+
+img.card {
+  max-width: 40em;
+  max-height: 35em;
+}
+
+img.yin {
+  width: 4em;
+  height: 4em;
+}
+
+.profile-card {
+  width: 13em;
+  position: fixed;
+  margin-left: 3em;
+  @include profile-borders;
+  margin-top: 2em;
+  @include centered;
+  span {
+    font-size: 1.2em;
+  }
+}
+
+img.constrained {
+  max-width: 600px;
+  max-height: 450px;
+}
+
+.video-container {
+
+}
+
+@media (max-width: 992px) {
+
+  img.constrained, img.card, iframe {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .profile-card {
+    width: 10em;
+    margin-left: 2em;
+  }
+
+  img.profile {
+    &.small {
+      height: 8em;
+      border: 5px solid $orange;
+    }
+  }
+}
+
+.post-title {
+  color: $red;
+  font-size: 1.8em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  border-top: 3px solid $very-light-grey;
+}
+
+article.post {
+  p, ul, ol {
+    font-size: $display-font-size;
+  }
+
+  div.separator {
+    @include top-margined;
+    @include bottom-margined;
+    color: $green;
+    font-size: 1.4em;
+  }
+}
+
+.index {
+  border-left: 3px solid $light-orange;
+  border-right: 3px solid $light-orange;
+}
+
+.pointer {
+  @include pointer;
+}
+
+.display-copy {
+  color: white;
+  font-size: $display-font-size;
+  @include centered;
+  text-align: justify;
+  @include top-margined;
+  a {
+    @include green;
+  }
+}
+
+a.post {
+  @include green;
+  font-size: 1.2em;
+}
+
+a {
+  &:hover {
+    color: $acqua;
+    text-decoration: none;
+  }
+
+}
+
+a.target {
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+figure.highlight {
+  pre {
+    @include top-margined;
+    @include bottom-margined;
+  }
+}
+
+// body { padding-top: 1em; }
+
+.jumbo-top {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.signup-copy {
+  font-size: 1.2em;
+  color: white;
+}
+
+.signup-form-container {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: $grey; 
+  
+  
+
+  input, button {
+    height: 35px;
+    &.email {
+      width: 220px;
+    }
+    &.subscribe {
+      color: white;
+      background-color: $orange;
+    }
+  }
+
+  form {
+    display: inline;
+  }
+}
+.tribal-penguin {
+  height: 25em;
+  border: .3em solid $light-reddish;
+  border-radius: 1000px;
+}
+
+iframe.full-col {
+  width: 90%;
+  height: 40%;
+}
+
+.full-bleed {
+  width: 90%;
+}
+
+.section {
+  margin: 3em 0;
+}
+
+.nav.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+
+.nav-offset {
+  margin-left: 18%;
+}
+
+#navbar-content {
+  text-align: center;
+  padding: none;
+  background-color: $black;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background-color: $black;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $green;
+  font-size: 1.1em;
+}
+
+#primary-slider, #certs-slider {
+  background-color: black;
+}

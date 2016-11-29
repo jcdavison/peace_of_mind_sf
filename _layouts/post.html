@@ -3,9 +3,12 @@
     {% include head.html %}
     {% include meta_data.html %}
     {% include post_meta_data.html %}
+    {% css app %}
   </head>
   <body id="post">
+    {% include nav_bar.html  %}          
     {{ content }}
-    {% include scripts.html %}	        
+    <div id="fb-root"></div>
+    {% js app %}
   </body>
 </html>

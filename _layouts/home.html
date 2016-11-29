@@ -2,20 +2,21 @@
   <head>
     {% include head.html %}
     {% include meta_data.html %}
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% css app %}
   </head>
   <body id="page">
+    {% include nav_bar.html %}          
     <div class='container index'>
       <div class='row'>
         <div class='col-sm-8 center-block no-float jumbo-top'>
           <div class='top-margined centered'>
-            <a href='/'><img src="/images/POM_Logo_v9_orange325b.png"></a>
+            <a href='/'><img src="/assets/images/POM_Logo_v9_orange325b.png"></a>
           </div>
           {{ content }}
         </div>
       </div>
     </div>
-    {% include scripts.html %}          
+    <div id="fb-root"></div>
+    {% js app %}
   </body>
 </html>

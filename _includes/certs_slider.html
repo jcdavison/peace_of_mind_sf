@@ -1,0 +1,19 @@
+<div id="certs-slider" class="carousel slide hide" data-interval="false">
+  <div class="carousel-inner" role="listbox">
+      {% for image in site.static_files %}
+          {% if image.path contains 'images/certs' %}
+          <div class='item certs' >
+              <img src="{{ image.path }}" class=' center-block' />
+          </div>
+          {% endif %}
+      {% endfor %}
+  </div>
+
+  <a class="left carousel-control" href="#certs-slider" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  </a>
+
+  <a class="right carousel-control" href="#certs-slider" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  </a>
+</div>

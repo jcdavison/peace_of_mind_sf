@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Peace of Mind
+nav-offset: true
 description: ""
 tags: martial-arts 
 ---
@@ -10,18 +11,19 @@ tags: martial-arts
     <div class='col-sm-3'>
       {% include jkd_sub_nav.html page= page %}	        
     </div>
-    <div class='col-sm-8'>
-      <div class='extra-top-margined'>
+    <div class='col-sm-9 wide-padding'>
+      <div class='top-margined'>
         <article class='post top-bar'>
+          <a name='jkd' class='extra-top-margined transparent hidden-xs'>.</a>
           <div class='section'>
             <div class='top-margined centered'>
               <h2 class='orange centered papy'>
-                <a name='jkd' class='orange target'>Jeet Kune Do</a>
+                <a class='orange target'>Jeet Kune Do</a>
               </h2>
             </div>
 
             <div class='top-margined centered'>
-              <img src="/images/BruceLee.jpg">
+              <img src="/assets/images/BruceLee.jpg">
             </div>
 
             <div class='top-margined centered'>
@@ -38,11 +40,11 @@ tags: martial-arts
           </div>
 
           <div class="display-copy">
-            Jeet Kune Do is the name Bruce Lee gave to his own personal theories and principles on streetfighting. This method of training will teach you how to function out of all 4 ranges of fighting - Kicking, Punching, Trapping, and Grappling. My goal is to help you become a well-rounded fighter who can adapt to any range, opponent, or situation. This is accomplished by providing you with a blend of various training modalities designed to increase your attribute level and fighting skill. This is not a random mixture of martial arts but rather a series of proven training methods developed by Sijo Bruce Lee, Guro Dan Inosanto, Sigung Paul Vunak, and Professor James Hundon.
+            Jeet Kune Do is the name Bruce Lee gave to his own personal theories and principles on streetfighting. This method of training will teach you how to function out of all 4 ranges of fighting - Kicking, Punching, Trapping, and Grappling. My goal is to help you become a well-rounded fighter who can adapt to any range, opponent, or situation. This is accomplished by providing you with a blend of various training modalities designed to increase your attribute level and fighting skill. This is not a random mixture of martial arts but rather a series of proven training methods developed by Sijo Bruce Lee, Guru Dan Inosanto, Sigung Paul Vunak, and Professor James Hundon.
           </div>
 
           <div class='top-margined centered'>
-            <img src="/images/DanI.jpg">
+            <img src="/assets/images/DanI.jpg">
           </div>
 
           <div class="display-copy">
@@ -50,7 +52,7 @@ tags: martial-arts
           </div>
 
           <div class='top-margined centered'>
-            <img src="/images/PaulBB.jpg">
+            <img src="/assets/images/PaulBB.jpg">
           </div>
 
           <div class="display-copy">
@@ -62,7 +64,7 @@ tags: martial-arts
           </div>
 
           <div class='top-margined centered'>
-            <img src="/images/PaulSeals.jpg">
+            <img src="/assets/images/PaulSeals.jpg">
           </div>
 
           <div class="display-copy">
@@ -91,46 +93,18 @@ tags: martial-arts
             </ul>
           </div>
 
-          <div class="slider top-margined centered hide" id='example-work'>
-            <div class='frame'>
-              <span class='slide-helper'></span>
-              <img src="/images/certs/fullcert.jpg">
-            </div>
+          {% include certs_slider.html %}          
 
-            <div class='frame'>
-              <span class='slide-helper'></span>
-              <img src="/images/certs/certificate.jpg">
-            </div>
-
-            <div class='frame'>
-              <span class='slide-helper'></span>
-              <img src="/images/certs/umaa_affiliation.jpg">
-            </div>
-
-            <div class='frame'>
-              <span class='slide-helper'></span>
-              <img src="/images/certs/umaa_finger_locking.jpg">
-            </div>
-
-            <div class='frame'>
-              <span class='slide-helper'></span>
-              <img src="/images/certs/jkdaa1.5.jpg">
-            </div>
-
-            <div class='frame'>
-              <span class='slide-helper'></span>
-              <img src="/images/certs/sierrasummitcert.jpg">
-            </div>
-          </div>
+          <a name='jutrap' class='extra-top-margined transparent hidden-xs'>.</a>
 
           <div class='section centered'>
             <h2 class='orange centered papy'>
-              <a name='jutrap' class='orange target'>Dynamic Small Circle Ju Trap Boxing</a>
+              <a class='orange target'>Dynamic Small Circle Ju Trap Boxing</a>
             </h2>
           </div>
 
           <div class='top-margined centered'>
-            <img src="/images/UMMA.jpg" border=0 >
+            <img src="/assets/images/UMMA.jpg" border=0 >
           </div>
 
           <div class="display-copy">
@@ -145,14 +119,16 @@ tags: martial-arts
           Ju Trap Boxing also teaches us philosophical principles that apply to our everyday lives as much as to self defense situations. How do we learn to adapt to sudden changes? How do we take control of situations? How do we focus on the positive and discard the negative? The ultimate focus of Ju Trap Boxing is to blend, adapt and become one with the challenges we are faced with in life - whether physical, mental or spiritual. In this journey towards spiritual balance we also find our own personal expression. 
           </div>
 
+          <a name='kali' class='extra-top-margined transparent hidden-xs'>.</a>
+
           <div class='section centered'>
             <h2 class='orange centered papy'>
-              <a name='kali' class='orange target'>Filipino Martial Arts (Kali/Escrima)</a>
+              <a class='orange target'>Filipino Martial Arts (Kali/Escrima)</a>
             </h2>
           </div>
 
           <div class='top-margined centered'>
-            <img src="/images/kali.jpg" border=0 >
+            <img src="/assets/images/kali.jpg" border=0 >
           </div>
 
           <div class="display-copy">
@@ -180,9 +156,10 @@ tags: martial-arts
             <li>Silat</li>
           </ul>
 
+          <a name='attributes' class='extra-top-margined transparent hidden-xs'>.</a>
           <div class='section centered'>
             <h2 class='orange centered papy'>
-              <a name='attributes' class='orange target'>JKD Attributes</a>
+              <a class='orange target'>JKD Attributes</a>
             </h2>
           </div>
 
@@ -232,19 +209,16 @@ tags: martial-arts
           </ul>
           <div class="display-copy" align='right'><i>--Sigung Paul Vunak</i></div>
 
-
-
-
+          <a name='principles' class='extra-top-margined transparent hidden-xs'>.</a>
           <div class='section centered'>
             <h2 class='orange centered papy'>
-              <a name='principles' class='orange target'>JKD Guiding Principles</a>
+              <a class='orange target'>JKD Guiding Principles</a>
             </h2>
           </div>
 
           <div class='display-copy'>
             Jeet Kune Do approaches effective self defense in a uniquely different manner which sets it apart from most other Martial Arts. Some distinctive principles are noted with a brief description.
           </div>
-
 
           <div class='display-copy'>
             <span class='orange'>Non Telegraphic Movement</span> - Drawing the arm back before striking, stepping before kicking or showing any obvious "build up" movement tells the opponent what you're about to do. This gives them the opportunity to counter attack you. We learn to punch and kick efficiently without telegraphing our intentions.
@@ -312,9 +286,11 @@ tags: martial-arts
           </div>
 
 
+          <a name='wingchun' class='extra-top-margined transparent hidden-xs'>.</a>
+
           <div class='section centered'>
             <h2 class='orange centered papy'>
-              <a name='wingchun' class='orange target'>JKD Terminology</a>
+              <a class='orange target'>JKD Terminology</a>
             </h2>
           </div>
 
