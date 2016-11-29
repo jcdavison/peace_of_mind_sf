@@ -342,6 +342,17 @@ iframe.full-col {
     text-decoration: none;
   }
 }
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $orange;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: $orange;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: $green;
+}
 
 #primary-slider, #certs-slider {
   background-color: black;
